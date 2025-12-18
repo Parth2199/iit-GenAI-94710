@@ -4,7 +4,7 @@ import os
 
 load_dotenv()
 
-api_key=os.getenv("api")
+api_key=os.getenv("OPEN_WEATHER_API")
 
 flag='yes'if api_key else 'no'
 print("Api key Loaded !!")
