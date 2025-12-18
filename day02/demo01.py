@@ -6,7 +6,7 @@ load_dotenv()
 
 api_key=os.getenv("OPEN_WEATHER_API")
 
-flag='yes'if api_key else 'no'
+flag='yes'if api_key else 'no' 
 print("Api key Loaded !!")
 
 city=input("Enter City : ")
