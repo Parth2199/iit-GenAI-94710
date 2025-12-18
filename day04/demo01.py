@@ -17,7 +17,7 @@ for msg in st.session_state.message:
 def response(text):
     for word in text.split():
         yield word + " "
-        time.sleep(0.2)
+        time.sleep(0.1)
 
 chat_ip = st.chat_input("Enter Message")
 
