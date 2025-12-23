@@ -97,6 +97,9 @@ log_messages(response1["messages"])
 print("Final Answer:", response1["messages"][-1].content)
 
 
+
+
+
 city = input("enter message(for weather)  :")
 response2 = agent.invoke({
     "messages": [
@@ -106,14 +109,22 @@ response2 = agent.invoke({
 log_messages(response2["messages"])
 print("Final Answer:", response2["messages"][-1].content)
 
+
+
+
+
 path = input("Give path : ")
 response3 = agent.invoke({
     "messages": [
-        {"role": "user", "content": path}
+        {"role": "user", "content": f"Read thi filr and return the content : {path}"}
     ]
 })
 log_messages(response3["messages"])
 print("Final Answer:", response3["messages"][-1].content)
+
+
+
+
 
 response4 = agent.invoke({
     "messages": [
